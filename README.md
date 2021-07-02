@@ -19,5 +19,5 @@
 
 * 启动并进入镜像 docker run -it huyisheng/alpine_maven
 * 后台启动镜像 docker run -d huyisheng/alpine_maven
-* 使用自定义的settings.xml docker run -it -v /Users/yixia/.m2/settings.xml:/usr/soft/apache-maven-3.8.1/conf/settings.xml huyisheng/alpine_maven
-* 使用宿主机的maven本地参考,即settings.xml配置了<localRepository>/Users/root/.m2/repository</localRepository>,可以使用-v把本地仓库目录也绑定进去,docker run -it -v /Users/yixia/.m2/settings.xml:/usr/soft/apache-maven-3.8.1/conf/settings.xml -v /Users/root/.m2/repository:/Users/root/.m2/repository huyisheng/alpine_maven
+* 使用自定义的settings.xml docker run -it -v /Users/root/.m2/settings.xml:/usr/soft/apache-maven-3.8.1/conf/settings.xml huyisheng/alpine_maven
+* 使用宿主机的maven本地仓库,即settings.xml配置了<localRepository>/Users/root/.m2/repository</localRepository>,可以使用-v把本地仓库目录也绑定进去,docker run -it -v /Users/root/.m2/settings.xml:/usr/soft/apache-maven-3.8.1/conf/settings.xml -v /Users/root/.m2/repository:/Users/root/.m2/repository huyisheng/alpine_maven
