@@ -1,4 +1,4 @@
-FROM huyisheng/alpine_openjdk
+FROM huyisheng/alpine_openjdk:8
 MAINTAINER haosenwei
 ADD ./apache-maven-3.8.1-bin.tar.gz /usr/soft/
 

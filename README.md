@@ -5,14 +5,14 @@
 * maven环境的基础镜像
 
 * 底层是alpine镜像
-* 最新的java版本:openjdk1.11
+* 最新的java版本:openjdk8
 * maven版本:3.8.1
 * 软件路径:/usr/soft/apache-maven-3.8.1
 
 ### 主要目的 ###
 
 * 为需要maven环境的项目提供基础镜像
-* jdk1.11
+* jdk8
 * maven3.8,1
 
 ### 使用方法 ###
